@@ -1,0 +1,24 @@
+{
+  "version": "v4",
+  "repo": "DefinitelyTyped/DefinitelyTyped",
+  "ref": "master",
+  "path": "lib/types",
+  "bundle": "lib/types/tsd.d.ts",
+  "installed": {
+    "assertion-error/assertion-error.d.ts": {
+      "commit": "44592d79b86a2b940212511775d92b437e54ceea"
+    },
+    "chai/chai.d.ts": {
+      "commit": "44592d79b86a2b940212511775d92b437e54ceea"
+    },
+    "mocha/mocha.d.ts": {
+      "commit": "44592d79b86a2b940212511775d92b437e54ceea"
+    },
+    "lodash/lodash.d.ts": {
+      "commit": "44592d79b86a2b940212511775d92b437e54ceea"
+    },
+    "sinon/sinon.d.ts": {
+      "commit": "44592d79b86a2b940212511775d92b437e54ceea"
+    }
+  }
+}
