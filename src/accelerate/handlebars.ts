@@ -10,7 +10,7 @@ type Template = {
     template: HandlebarsTemplateDelegate,
 }
 
-export class HandlerbarsViewManager implements ViewManager {
+export class HandlebarsViewManager implements ViewManager {
 
     templates: Template[];
     private renderer : HandlebarsRenderer;

@@ -34,9 +34,6 @@ module.exports = function (config) {
 
         },
         packages: {
-          // 'test/unit': {
-          //   defaultExtension: 'ts'
-          // },
           'src/app': {
             main: 'main.ts', defaultExtension: 'ts'
           },
