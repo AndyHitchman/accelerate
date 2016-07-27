@@ -25,8 +25,7 @@ module.exports = function(config) {
         paths: {
           "typescript": "node_modules/typescript/lib/typescript.js",
           "systemjs": "node_modules/systemjs/dist/system.js",
-          'system-polyfills': 'node_modules/systemjs/dist/system-polyfills.js',
-          'es6-module-loader': 'node_modules/es6-module-loader/dist/es6-module-loader.js'
+          'system-polyfills': 'node_modules/systemjs/dist/system-polyfills.js'
         },
         map: {
           app:                'src/app',
@@ -49,6 +48,7 @@ module.exports = function(config) {
       },
       serveFiles: [
         'src/**/*.ts',
+        'lib/**/*.js.map'
       ]
     },
 

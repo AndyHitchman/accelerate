@@ -6,12 +6,13 @@ import { Controller } from "./controller";
 
 describe('Accelerate', () => {
 
-    it('should set the root element', () => {
+    it('should set the root element and controller set', () => {
         const element = {};
-        const controllers:Controller[] = [];
+        const controllers : Controller[] = [];
 
         const bootstrap = new Accelerate(element, controllers);
 
         bootstrap.appRoot.should.be.eq(element);
+        bootstrap.controllers.should.be.eq(controllers);
     });
 });
