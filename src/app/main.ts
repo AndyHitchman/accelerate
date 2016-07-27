@@ -3,8 +3,7 @@
  */
 console.log("Main loaded");
 
-import { Bootstrapper } from "../accelerate";
+import { Accelerate } from "../accelerate";
+import { controllers } from "./controllers";
 
-let bootstrap = new Bootstrapper();
-
-bootstrap.atElement(window.document.getElementsByTagName('app')[0]);
+new Accelerate(window.document.getElementById('app'), controllers);

@@ -33,9 +33,9 @@ module.exports = function(config) {
           accelerate:         'src/accelerate'
         },
         packages: {
-          'test/unit': {
-            defaultExtension: 'ts'
-          },
+          // 'test/unit': {
+          //   defaultExtension: 'ts'
+          // },
           'src/app': {
             main:             'main.ts',
             defaultExtension: 'ts'
@@ -53,7 +53,7 @@ module.exports = function(config) {
     },
 
     files: [
-      'test/unit/*.ts'
+      'src/**/*.spec.ts'
     ],
 
     exclude: [],

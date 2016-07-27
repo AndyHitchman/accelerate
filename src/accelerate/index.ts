@@ -2,13 +2,15 @@
 console.log("Accelerate loaded");
 
 import { log } from "./logger";
+import { Controller } from "./controller";
 
-
-export class Bootstrapper {
+export class Accelerate {
     appRoot : Element;
+    controllers: Controller[];
 
-    atElement(element : any) {
-        log.info(`Bootstrapping at ${element.toString()}`);
-        this.appRoot = element;
+    constructor(appRoot : any, controllers : Controller[]) {
+        log.info(`Bootstrapping at ${appRoot.toString()}`);
+        this.appRoot = appRoot;
+        this.controllers = controllers;
     }
 }
