@@ -3,7 +3,7 @@
  */
 console.log("Main loaded");
 
-import { Bootstrapper } from "./accelerate";
+import { Bootstrapper } from "accelerate";
 
 let bootstrap = new Bootstrapper();
 

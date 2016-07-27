@@ -3,6 +3,7 @@ console.log("Accelerate loaded");
 
 import { log } from "./logger";
 
+
 export class Bootstrapper {
     appRoot : Element;
 

@@ -20,7 +20,7 @@ module.exports = function(config) {
     ],
 
     systemjs: {
-      configFile: 'src/systemjs.config.js',
+      // configFile: 'src/systemjs.config.js',
       config: {
         paths: {
           "typescript": "node_modules/typescript/lib/typescript.js",
@@ -28,18 +28,27 @@ module.exports = function(config) {
           'system-polyfills': 'node_modules/systemjs/dist/system-polyfills.js',
           'es6-module-loader': 'node_modules/es6-module-loader/dist/es6-module-loader.js'
         },
+        map: {
+          app:                'src/app',
+          accelerate:         'src/accelerate'
+        },
         packages: {
           'test/unit': {
             defaultExtension: 'ts'
           },
-          'src': {
+          'src/app': {
+            main:             'main.ts',
+            defaultExtension: 'ts'
+          },
+          'src/accelerate': {
+            main:             'index.ts',
             defaultExtension: 'ts'
           }
         },
         transpiler: 'typescript'
       },
       serveFiles: [
-        'src/app/**/*.ts',
+        'src/**/*.ts',
       ]
     },
 

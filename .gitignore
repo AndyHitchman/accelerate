@@ -5,3 +5,6 @@ dist
 node_modules
 **/*.js.map
 **/*.js
+!karma.conf.js
+!gulpfile.js
+!src/systemjs.config.js

@@ -1,8 +1,7 @@
 /**
  * Created by Andy on 26/07/2016.
  */
-import { Bootstrapper } from "../../src/app/accelerate/index";
-
+import { Bootstrapper } from "accelerate";
 
 describe('Bootstrap', () => {
 
