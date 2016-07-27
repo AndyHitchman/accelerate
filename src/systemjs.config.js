@@ -1,22 +1,21 @@
-(function(global) {
+(function (global) {
 
-  // map tells the System loader where to look for things
-  var map = {
-    app:                        'app',
-    accelerate:                 'accelerate'
-  };
+    // map tells the System loader where to look for things
+    // packages tells the System loader how to load when no filename and/or no extension
+    const config = {
+        map: {
+            app: 'app',
+            accelerate: 'accelerate',
+            handlebars: 'node_modules/handlebars/dist'
+        },
+        packages: {
+            accelerate: {main: 'index.js', defaultExtension: 'js'},
+            app: {main: 'main.js', defaultExtension: 'js'},
+            handlebars: {main: 'handlebars.js', defaultExtension: 'js'}
 
-  // packages tells the System loader how to load when no filename and/or no extension
-  var packages = {
-    accelerate :                { main: 'index.js', defaultExtension: 'js' },
-    app :                       { main: 'main.js',  defaultExtension: 'js' }
-  };
+        }
+    };
 
-  var config = {
-    map: map,
-    packages: packages
-  };
-
-  System.config(config);
+    System.config(config);
 
 })(this);

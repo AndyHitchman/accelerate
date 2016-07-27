@@ -1,4 +1,4 @@
-module.exports = function(config) {
+module.exports = function (config) {
 
   config.set({
     basePath: '',
@@ -28,27 +28,31 @@ module.exports = function(config) {
           'system-polyfills': 'node_modules/systemjs/dist/system-polyfills.js'
         },
         map: {
-          app:                'src/app',
-          accelerate:         'src/accelerate'
+          app: 'src/app',
+          accelerate: 'src/accelerate',
+          handlebars: 'node_modules/handlebars/dist'
+
         },
         packages: {
           // 'test/unit': {
           //   defaultExtension: 'ts'
           // },
           'src/app': {
-            main:             'main.ts',
-            defaultExtension: 'ts'
+            main: 'main.ts', defaultExtension: 'ts'
           },
           'src/accelerate': {
-            main:             'index.ts',
-            defaultExtension: 'ts'
+            main: 'index.ts', defaultExtension: 'ts'
+          },
+          'handlebars': {
+            main: 'handlebars.js', defaultExtension: 'js'
           }
         },
         transpiler: 'typescript'
       },
       serveFiles: [
         'src/**/*.ts',
-        'lib/**/*.js.map'
+        'lib/**/*.js.map',
+        'node_modules/handlebars/dist/*.js'
       ]
     },
 

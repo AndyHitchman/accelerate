@@ -1,4 +1,4 @@
-export class Controller {
+export abstract class Controller {
     matchPath : string;
 }
 
